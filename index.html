@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body style="background-color: #ffe4e1">
+    <h1 style="text-align: center">Student Registration Form</h1>
+    <form action="" style="margin: 0 auto; width: 500px">
+      <label for="roll">Roll no : </label>
+      <input type="text" name="rollno" id="roll" /><br /><br />
+      <label for="first_name">Student name : </label>
+      <input type="text" id="first_name" name="first_name" placeholder="First Name" size="20" />
+      <span>-</span>
+      <input type="text"id="last_name"name="last_name"placeholder="Last Name"/><br /><br />
+      <label for="father_name">Father's name : </label>
+      <input type="text" id="father_name" name="father_name" size="45" /><br /><br />
+      <label>Date of birth : </label>
+      <input type="text" name="dob_day" placeholder="Day"size="5" maxlength="2"/>
+      <span>-</span>
+      <input type="text" name="dob_month" placeholder="Month" size="5" maxlength="2"/>
+      <span>-</span> 
+      <input type="text" name="dob_year" placeholder="Year" size="5" maxlength="4"/>
+      <span>(DD-MM-YYYY)</span>
+      <br /><br />
+       <label for="mobile_no">Mobile no :</label>
+           <input type="text" id="mobile" name="mobile" size="1" maxlength="3"  value="+91">
+           <span>-</span>
+           <input type="text" id="mobile_no" name="mobile_no" size="30"><br><br>
+      <label for="email_id">Email id : </label>
+      <input type="email" id="email_id" name="email_id" size="50" /><br/><br />
+      <label for="password">Password : </label>
+      <input type="password" id="password" name="password" size="50"/><br/><br />
+      <label>Gender : </label>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label><br /><br />
+      <label>Department : </label>
+      <input type="checkbox" id="cse" name="department" value="cse" />
+      <label for="cse">CSE</label>
+      <input type="checkbox" id="it" name="department" value="it" />
+      <label for="it">IT</label>
+      <input type="checkbox" id="ece" name="department" value="ece" />
+      <label for="ece">ECE</label>
+      <input type="checkbox" id="civil" name="department" value="civil" />
+      <label for="civil">Civil</label>
+      <input type="checkbox" id="mech" name="department" value="mech" />
+      <label for="mech">Mech</label><br /><br />
+      <label for="course">Course : </label>
+      <select id="course" name="course">
+        <option disabled selected>--- Select Current Course's ---</option>
+        <option value="btech">B.Tech</option>
+        <option value="mtech">M.Tech</option>
+        <option value="mba">MBA</option>
+        <option value="other">Other</option>
+      </select><br /><br />
+      <label for="student_photo">Student photo : </label>
+      <input type="file" id="student_photo" name="student_photo" /><br /><br />
+      <label for="city">City : </label>
+      <input type="text" id="city" name="city" size="50" /><br/><br />
+      <label for="address">Address : </label><br />
+      <textarea id="address" name="address" rows="4" cols="53"></textarea><br/><br />
+      
+      <p style="text-align: center;"><input type="submit" value="Register"/></p>
+    </form>
+  </body>
+</html>
